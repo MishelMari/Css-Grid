@@ -1,0 +1,102 @@
+body {
+    background: #E1E6EB;
+    font-family: 'Raleway', sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas: "ba-post__link--1 ba-post__link--1 ba-post__link--2 ." "ba-post__link--3 ba-post__link--4 ba-post__link--5 ." ". . . .";
+    grid-gap: 20px;
+    margin-top: 85px;
+    margin-bottom: 85px;
+    margin-left: 250px;
+}
+
+.ba-post__link--1 {
+    grid-area: ba-post__link--1;
+}
+
+.ba-post__link--2 {
+    grid-area: ba-post__link--2;
+}
+
+.ba-post__link--3 {
+    grid-area: ba-post__link--3;
+}
+
+.ba-post__link--4 {
+    grid-area: ba-post__link--4;
+}
+
+.ba-post__link--5 {
+    grid-area: ba-post__link--5;
+}
+
+div[class*="ba-post__link"] {
+    position: relative;
+}
+
+.ba__wrap--main {
+    position: absolute;
+    top: 70%;
+    left: 10px;
+}
+
+.ba-grid--1 {
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+    display: block;
+    background-color: #000;
+}
+
+.ba-grid {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    background-color: #000;
+}
+
+.ba-post__date {
+    color: #fff;
+    margin-left: 10px;
+}
+
+.ba-post__title--no-grow {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 2px;
+    margin-left: 10px;
+}
+
+.ba-post__body {
+    background: #fff;
+    padding: 25px 30px;
+    height: 245px;
+    color: #000;
+}
+
+.ba-post__title {
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+
+.ba-author__avatar {
+    top: 75%;
+    position: absolute;
+}
+
+.ba-author__name {
+    color: #1D1D1D;
+    top: 83%;
+    position: absolute;
+    margin-left: 6px;
+    font-size: 12px;
+}
